@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Game</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+</head>
+<body>
+    <div class="container d-flex justify-content-center">
+        <div class="d-flex p-4 g-5">
+          <div class="card mx-4 p-5 text-center">
+            <img width="200" src="./assets/user-icon-2048x2048-ihoxz4vq.png" alt="" />
+            <div class="card-body">
+              <h5 class="card-title text-bg-primary">Player</h5>
+              <p class="card-text text-success h2" id="playerFirstTitle">Win</p>
+              <p class="card-text h4" id="playerFirstScore">Score:0</p>
+            </div>
+            <img
+              width="200"
+              src="./assets/s.png"
+              alt="scissors"
+              id="playerFirstHand"
+            />
+          </div>
+          <div class="display-2">
+            <img width="200" src="./assets/vs.png" alt="vs" />
+          </div>
+          <div class="card mx-4 p-5 text-center">
+            <img width="200" src="./assets/images.jfif" alt="" />
+            <div class="card-body">
+              <h5 class="card-title text-bg-primary">Computer</h5>
+              <p class="card-text text-danger h2" id="playerSecondTitle">LOSE</p>
+              <p class="card-text h4" id="playerSecondScore">Score:0</p>
+            </div>
+            <img width="200" src="./assets/r.png" alt="rock" id="playerSecondHand" />
+          </div>
+        </div>
+      </div>
+  
+      <!-- Utils -->
+      <script src="./random.js"></script>
+  
+      <!-- General -->
+      <script src="./dom.js"></script>
+      <script src="./main.js"></script>  
+</body>
+</html>
